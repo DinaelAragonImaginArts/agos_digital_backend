@@ -3,7 +3,7 @@ import sgMail from '@sendgrid/mail';
 export const envio = async (datos) => {
   const { nombre, correo, telefono, detalles } = datos;
   const info = {
-    from: `${correo}`,
+    from: 'info@agos.mx',
     to: 'info@agos.mx',
     subject: `Nombre: ${nombre}`,
     text: `Correo: ${correo}`,
